@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white; 
+    margin-bottom: 5%;
+
+}
+
+h1 {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: lightgray;
+}
+
+
+.intro{
+    text-align: center;
+}
+
+.introheading{
+    text-align: center;
+    padding: 1%;
+}
+
+
+.divbtn {
+    text-align: center;
+    margin: 2%;
+}
+
+.lunchbtn{
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.09);
+}
+
+.lunchbtn:hover{
+    background-color: #333;
+    color: white;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    background-color: white;
+    margin: 20% auto;
+    width: 30%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 2s;
+}
+
+.modal-header{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.modal-body{
+    padding: 30px 20px;
+}
+
+p{
+    padding: 5px;
+    opacity: 0.8;
+}
+
+
+.closeBtn{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to {opacity: 1}
+}
+
+
+
+.container{
+
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.filter_buttons{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.active{
+    background: black;
+    color: lightgray;
+}
+
+.filterable_cards{
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+flex: 1 1 300px;
+max-width: 300px;
+background-color: lightgray;
+padding: 3px;
+border-radius: 8px;
+}
+
+.hide{
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.card_body{
+    padding: 15px 20px 20px;
+
+}
+
+.card_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: underline;
+}
+
+.card_text {
+    color: #333;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+main{
+    flex: 1;
+}
+
+
+
+
+
+
+footer{
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer{
+    padding: 20px;
+}

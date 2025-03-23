@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/lunch.css">
+</head>
+<body>
+    <header>
+        <h1>Léon Ristorante</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="introheading">Välkommna på lunch hos oss på Léon!</h2>
+            <p class="intro">Öppetider</p>
+            <p class="intro">Från kl 11:30 vardagar</p>
+        </section>
+
+        <div class="divbtn">
+            <button id="modalBtn" class="lunchbtn">Dagens erbjudande</button>
+        </div>
+
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Dagens lunch</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Klassisk sicilliansk pasta 140</p>
+                    <p> <i>ink sallad, bröd, kaffe</i></p>
+                </div>
+            
+                
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <!--filter buttuns-->
+            <div class="filter_buttons">
+                <button class="active" data-name="all">Alla rätter</button>
+                <button data-name="Antipasti">Antipasti</button>
+                <button data-name="Primi">Primi</button>
+                <button data-name="Dolci">Dolci</button>
+            </div>
+
+            <!-- Images cards -->
+            <div class="filterable_cards">
+                <div class="card" data-name="Antipasti">
+                    <img src="images/daniel-uvegard-lxQIrGWE9iM-unsplash.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">Misto di Salumi</h6>
+                        <P class="card_text">Ett urval av italienska charkuterier  195</P>
+                    </div>
+                </div>
+                <div class="card" data-name="Antipasti">
+                    <img src="images/gourmet-5619887_1280.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">Bruschetta med twist</h6>
+                        <P class="card_text">Traditionell italiensk bruschetta med tillbehör   95</P>
+                    </div>
+                </div>
+
+                <div class="card" data-name="Primi">
+                    <img src="images/ronit-shaked-m_HzJBSMnSI-unsplash.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">Giganti</h6>
+                        <P class="card_text">Léons pastakuddar med sparris och ricotta  265</P>
+                    </div>
+                </div>
+
+                <div class="card" data-name="Primi">
+                    <img src="images/sergey-kotenev-CEsrs0WHOiw-unsplash.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">SaltimBocca</h6>
+                        <P class="card_text">Kalvnoisette med färsk salvia  295</P>
+                    </div>
+                </div>
+
+                <div class="card" data-name="Primi">
+                    <img src="images/victoria-shes-4acsnIWXm3k-unsplash.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">Insalata Con Pollo Croccante</h6>
+                        <P class="card_text">Parmesan friterad kyckling med ceasarsallad 255</P>
+                    </div>
+                </div>
+
+                <div class="card" data-name="Dolci">
+                    <img src="images/elena-leya-fQ5NRUwqo6k-unsplash.jpg" alt="">
+                    <div class="card_body">
+                        <h6 class="card_title">Pannacotta</h6>
+                        <P class="card_text">Pannacotta med citrus och honung  135</P>
+                    </div>
+                </div>
+
+
+
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <h4 class="footer">&copy; 2025 Léon</h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
