@@ -46,6 +46,8 @@ nav a:hover{
 .contentbox{
     display: flex;
     margin: 10%;
+    flex-wrap: wrap;
+    padding-right: 20px;
 
 }
 
@@ -88,9 +90,6 @@ p{
 
 
 
-
-
-
 footer{
     background-color: black;
     color: white;
@@ -99,4 +98,46 @@ footer{
 
 .footer{
     padding: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contentbox {
+        flex-direction: column; 
+        margin: 5%; 
+    }
+
+    .menubox {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .lemonbox {
+        width: 100%; 
+    }
+
+    img {
+        opacity: 1; 
+    }
+
+    h2 {
+        font-size: 1.8em; 
+    }
+
+    h3 {
+        font-size: 1.5em; 
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.1em; 
+    }
+
+    .food {
+        font-size: 0.75em;
+    }
 }
